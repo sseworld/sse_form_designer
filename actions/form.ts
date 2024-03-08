@@ -54,6 +54,14 @@ export async function CreateForm(data: formSchemaType) {
 
   const { name, description } = data;
 
+  // const form = await prisma.form.create({
+  //   data: {
+  //     userId: user.id,
+  //     name,
+  //     description,
+  //   },
+  // });
+
   const form = await prisma.form.create({
     data: {
       userId: user.id,
@@ -85,7 +93,7 @@ export async function GetForms() {
   });
 }
 
-export async function GetFormById(id: number) {
+export async function GetFormById(id: string) {
   const user = await currentUser();
   if (!user) {
     throw new UserNotFoundErr();
@@ -99,7 +107,7 @@ export async function GetFormById(id: number) {
   });
 }
 
-export async function UpdateFormContent(id: number, jsonContent: string) {
+export async function UpdateFormContent(id: string, jsonContent: string) {
   const user = await currentUser();
   if (!user) {
     throw new UserNotFoundErr();
@@ -116,7 +124,7 @@ export async function UpdateFormContent(id: number, jsonContent: string) {
   });
 }
 
-export async function PublishForm(id: number) {
+export async function PublishForm(id: string) {
   const user = await currentUser();
   if (!user) {
     throw new UserNotFoundErr();
@@ -168,7 +176,7 @@ export async function SubmitForm(formUrl: string, content: string) {
   });
 }
 
-export async function GetFormWithSubmissions(id: number) {
+export async function GetFormWithSubmissions(id: string) {
   const user = await currentUser();
   if (!user) {
     throw new UserNotFoundErr();

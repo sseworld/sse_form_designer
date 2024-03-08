@@ -8,12 +8,12 @@
     "start": "next start",
     "lint": "next lint",
     "prisma_init": "prisma init",
+    "prisma": "prisma db pull --force",
     "postinstall": "prisma generate",
-    "prisma": "prisma db pull",
     "prismas": "prisma studio"
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.23.5",
+    "@clerk/nextjs": "^4.29.9",
     "@dnd-kit/core": "^6.0.8",
     "@hookform/resolvers": "^3.3.1",
     "@prisma/client": "^5.10.2",
