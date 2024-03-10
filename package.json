@@ -10,7 +10,9 @@
     "prisma_init": "prisma init",
     "prisma": "prisma db pull --force",
     "postinstall": "prisma generate",
-    "prismas": "prisma studio"
+    "prismas": "prisma studio",
+    "vercel": "vercel",
+    "vercelp": "vercel --prod"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.9",
