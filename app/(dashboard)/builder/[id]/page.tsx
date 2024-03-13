@@ -1,4 +1,4 @@
-import { GetFormById } from "@/actions/form";
+import { GetFormById } from "@/actions/prismaForm";
 import FormBuilder from "@/components/FormBuilder";
 import React from "react";
 

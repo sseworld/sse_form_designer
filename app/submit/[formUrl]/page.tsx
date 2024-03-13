@@ -1,4 +1,4 @@
-import { GetFormContentByUrl } from "@/actions/form";
+import { GetFormContentByUrl } from "@/actions/prismaForm";
 import { FormElementInstance } from "@/components/FormElements";
 import FormSubmitComponent from "@/components/FormSubmitComponent";
 import React from "react";

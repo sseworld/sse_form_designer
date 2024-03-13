@@ -1,6 +1,6 @@
 "use client";
 
-import { formSchema, formSchemaType } from "@/schemas/form";
+import { formSchema, formSchemaType } from "@/schemas/prismaForm";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { ImSpinner2 } from "react-icons/im";
@@ -25,7 +25,7 @@ import {
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { toast } from "./ui/use-toast";
-import { CreateForm } from "@/actions/form";
+import { CreateForm } from "@/actions/prismaForm";
 import { BsFileEarmarkPlus } from "react-icons/bs";
 import { useRouter } from "next/navigation";
 

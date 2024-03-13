@@ -1,4 +1,4 @@
-import { GetFormById, GetFormWithSubmissions } from "@/actions/form";
+import { GetFormById, GetFormWithSubmissions } from "@/actions/prismaForm";
 import FormLinkShare from "@/components/FormLinkShare";
 import VisitBtn from "@/components/VisitBtn";
 import React, { ReactNode } from "react";

@@ -1,4 +1,4 @@
-import { GetFormStats, GetForms } from "@/actions/form";
+import { GetFormStats, GetForms } from "@/actions/prismaForm";
 import {
   Card,
   CardContent,

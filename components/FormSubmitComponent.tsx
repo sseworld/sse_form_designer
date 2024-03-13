@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import { HiCursorClick } from "react-icons/hi";
 import { toast } from "./ui/use-toast";
 import { ImSpinner2 } from "react-icons/im";
-import { SubmitForm } from "@/actions/form";
+import { SubmitForm } from "@/actions/prismaForm";
 
 function FormSubmitComponent({
   formUrl,
